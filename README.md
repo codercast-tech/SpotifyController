@@ -1,2 +1,16 @@
 # KilyticsPlus
-KilyticsPlus es una solución analítica avanzada diseñada para proporcionar a los usuarios insights y métricas detalladas a través de la integración con la API de Spotify. 
+
+## Descripción
+KilyticsPlus es una aplicación avanzada de análisis de datos diseñada para ofrecer insights intuitivos y accionables a partir de grandes conjuntos de datos. Ideal para negocios y análisis individualizados.
+
+## Características
+- Análisis de datos en tiempo real.
+- Integración con múltiples fuentes de datos.
+- Visualización interactiva de datos.
+
+## Tecnologías Utilizadas
+- Front-end: React, D3.js
+- Back-end: Node.js, Express
+- Base de datos: 
+
+## Instalación y Configuración
