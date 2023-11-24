@@ -1,28 +1,29 @@
-Documentación de SpotifyController
-Introducción
-El SpotifyController es una clase PHP que actúa como controlador para interactuar con la API de Spotify. Te permite obtener detalles de canciones, incluyendo características de audio e información de artistas, desde la API de Spotify. Esta documentación proporciona una descripción general de la clase, sus métodos y cómo utilizarla.
+# Documentación de SpotifyController
 
-Requisitos Previos
-Antes de usar el SpotifyController, asegúrate de tener los siguientes requisitos previos:
+## Introducción
 
-PHP instalado en tu servidor.
-Composer instalado para gestionar las dependencias de PHP.
-Una cuenta activa de desarrollador de Spotify con un ID de cliente y un secreto de cliente.
-Instalación
-Para utilizar el SpotifyController en tu proyecto PHP, sigue estos pasos:
+El `SpotifyController` es una clase PHP que actúa como controlador para interactuar con la API de Spotify. Te permite obtener detalles de canciones, incluyendo características de audio e información de artistas, desde la API de Spotify. Esta documentación proporciona una descripción general de la clase, sus métodos y cómo utilizarla.
 
-Clona el repositorio o descarga el código en tu directorio de proyecto.
+## Requisitos Previos
 
-Ejecuta composer install para instalar las dependencias necesarias, incluyendo el cliente HTTP Guzzle.
+Antes de usar el `SpotifyController`, asegúrate de tener los siguientes requisitos previos:
 
-Configura tus credenciales de la API de Spotify agregando tu ID de cliente y secreto de cliente en las variables de entorno de tu proyecto.
+1. PHP instalado en tu servidor.
+2. Composer instalado para gestionar las dependencias de PHP.
+3. Una cuenta activa de desarrollador de Spotify con un ID de cliente y un secreto de cliente.
 
-bash
-Copy code
-SPOTIFY_CLIENT_ID=tu-id-de-cliente
-SPOTIFY_CLIENT_SECRET=tu-secreto-de-cliente
+## Instalación
+
+Para utilizar el `SpotifyController` en tu proyecto PHP, sigue estos pasos:
+
+1. Clona el repositorio o descarga el código en tu directorio de proyecto.
+2. Ejecuta `composer install` para instalar las dependencias necesarias, incluyendo el cliente HTTP Guzzle.
+3. Configura tus credenciales de la API de Spotify agregando tu ID de cliente y secreto de cliente en las variables de entorno de tu proyecto.
+
+   ```bash
+   SPOTIFY_CLIENT_ID=tu-id-de-cliente
+   SPOTIFY_CLIENT_SECRET=tu-secreto-de-cliente
 Incluye e instancia el SpotifyController en tu aplicación PHP según sea necesario.
-
 Estructura de la Clase
 La clase SpotifyController tiene la siguiente estructura:
 
@@ -37,8 +38,6 @@ getArtistInfo($artistIds): Obtiene información sobre artistas de Spotify median
 Uso
 Aquí tienes un ejemplo de cómo utilizar el SpotifyController en tu aplicación PHP:
 
-php
-Copy code
 use App\Http\Controllers\SpotifyController;
 
 // Instancia el SpotifyController
@@ -49,11 +48,8 @@ $idCancion = 'tu-id-de-cancion';
 $detallesCancion = $spotifyController->getTrackDetails($idCancion);
 
 // Utiliza los datos de $detallesCancion en tu aplicación
+
 Manejo de Errores
 El SpotifyController incluye manejo de errores para varios escenarios, como autenticación fallida o solicitudes a la API con problemas. Registra los errores y proporciona vistas de error para que tu aplicación maneje estos casos de manera elegante.
 
-Contribuciones
-Si encuentras problemas o tienes sugerencias de mejoras, no dudes en contribuir a este proyecto mediante solicitudes de extracción o abriendo problemas en el repositorio de GitHub.
 
-Licencia
-Este proyecto está bajo la Licencia MIT.
