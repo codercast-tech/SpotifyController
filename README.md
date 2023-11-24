@@ -1,16 +1,37 @@
-# KilyticsPlus
+# Kilytics6
 
-## Descripción
-KilyticsPlus es una aplicación avanzada de análisis de datos diseñada para ofrecer insights intuitivos y accionables a partir de grandes conjuntos de datos. Ideal para negocios y análisis individualizados.
+Kilytics6 es un proyecto que interactúa con la API de Spotify para obtener detalles de canciones y artistas.
 
-## Características
-- Análisis de datos en tiempo real.
-- Integración con múltiples fuentes de datos.
-- Visualización interactiva de datos.
+## Instalación
 
-## Tecnologías Utilizadas
-- Front-end: React, D3.js
-- Back-end: Node.js, Express
-- Base de datos: 
+1. Clona este repositorio en tu máquina local:
 
-## Instalación y Configuración
+   ```shell
+   git clone https://github.com/djkanoell/Kilytics6.git
+Instala las dependencias del proyecto:
+
+shell
+Copy code:
+
+cd Kilytics6
+composer install
+
+Crea un archivo .env y configura tus credenciales de Spotify:
+
+shell
+
+cp .env.example .env
+
+Edita el archivo .env y proporciona tu SPOTIFY_CLIENT_ID y SPOTIFY_CLIENT_SECRET.
+
+Genera una clave de aplicación de Laravel:
+
+shell
+
+php artisan key:generate
+
+Para utilizar este proyecto, sigue los pasos de instalación y luego puedes acceder a la funcionalidad de obtener detalles de una canción de Spotify a través de la URL:
+
+http://tudominio.com/track/{ID_DE_LA_CANCION}
+
+
